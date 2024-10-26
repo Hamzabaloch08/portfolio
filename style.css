@@ -76,31 +76,6 @@ nav {
   font-weight: 700;
 }
 
-.nav-menu > a:hover {
-  color: rgb(68, 16, 0);
-}
-
-/* underline animation for nav links */
-
-ul.my-list a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0px;
-  height: 2px;
-  background: aqua;
-  transition: all 0.7s ease-out;
-}
-
-/* underline animation for nav links */
-
-ul.my-list a:hover:after {
-  width: 100%;
-  left: 0;
-  color: aqua;
-}
-
 /* hamburger icons */
 .hamburger {
   display: none;
