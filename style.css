@@ -7,16 +7,6 @@
   color: aqua;
 }
 
-.circle {
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  background-color: black;
-  position: fixed;
-  pointer-events: none;
-  z-index: 1;
-}
-
 /* external font */
 
 * {
