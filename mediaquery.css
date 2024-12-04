@@ -882,12 +882,12 @@
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    gap: 20px 20px;
+    gap: 15px 10px;
   }
 
   .skills > button {
-    padding: 18px 18px;
-    font-size: 0.8rem;
+    padding: 14px 18px;
+    font-size: 0.7rem;
     letter-spacing: 0px;
   }
 }
