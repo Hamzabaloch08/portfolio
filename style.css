@@ -598,3 +598,27 @@ footer a {
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .main-message {
+    top: 60%;
+  }
+  .main-message h2 {
+    letter-spacing: 0.8rem;
+    font-size: 1.3rem;
+    width: 29ch;
+  }
+
+  .main-message h3 {
+    font-size: 1.7rem;
+  }
+
+  .main-message p {
+    font-size: 1.1rem;
+  }
+  .btn {
+    border-radius: 0.9rem;
+    padding: 0.9rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
