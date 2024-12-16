@@ -601,7 +601,7 @@ footer a {
 
 @media screen and (max-width: 375px) {
   .main-message {
-    top: 60%;
+    top: 58%;
   }
   .main-message h2 {
     letter-spacing: 0.8rem;
