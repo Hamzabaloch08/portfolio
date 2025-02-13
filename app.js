@@ -31,4 +31,34 @@ navLinks.forEach(link => {
             }
         })
     })
-})
+});
+
+
+
+
+// Add this JavaScript code to your existing app.js file
+const themeToggle = document.querySelector(".theme-toggle");
+const body = document.body;
+
+// Check localStorage for theme preference
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+    body.classList.add(savedTheme);
+    updateToggleIcon();
+}
+
+// Toggle Theme Function
+themeToggle.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+    localStorage.setItem("theme", body.classList.contains("light-mode") ? "light-mode" : "");
+    updateToggleIcon();
+});
+
+// Update Toggle Icon
+function updateToggleIcon() {
+    if (body.classList.contains("light-mode")) {
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Sun icon for light mode
+    } else {
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>'; // Moon icon for dark mode
+    }
+}

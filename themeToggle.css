@@ -1,0 +1,95 @@
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(3, 155, 155, 0.9); /* Match your theme color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(249, 105, 14, 0.9); /* Hover color */
+    transform: scale(1.1);
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.light-mode nav {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.438);
+    transition: background 0.3s ease, border-bottom 0.3s ease;
+}
+
+.light-mode .nav-list {
+    background-color: #f2f2f2;
+}
+
+.light-mode .nav-link {
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.light-mode .nav-link:hover {
+    color: rgba(249, 105, 14, 1);
+}
+
+.light-mode .btn {
+    background: rgba(3, 155, 155);
+    color: white;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.light-mode .btn:hover {
+    background: rgba(249, 105, 14);
+    color: white;
+}
+
+/* Light Mode for Landing Page */
+.light-mode .landing-page {
+    background: linear-gradient(rgb(255, 238, 230) 1%, #f8f9fa);
+}
+
+.light-mode .card {
+    background-color: #ffffff;
+    color: #212529;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.light-mode .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.light-mode footer a {
+    color: rgba(3, 155, 155);
+    transition: color 0.3s ease;
+}
+
+.light-mode footer a:hover {
+    color: rgba(249, 105, 14);
+}
