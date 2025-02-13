@@ -10,6 +10,11 @@
   box-sizing: inherit;
 }
 
+body {
+  overflow-x: hidden;
+  cursor: none;
+}
+
 html {
   font-family: "Share Tech Mono", monospace;
   font-size: 12px;
@@ -21,6 +26,7 @@ html {
 
 a {
   text-decoration: none;
+  cursor: none;
   color: rgb(3, 155, 155);
 }
 
@@ -36,20 +42,36 @@ p {
   font-size: 1.4rem;
 }
 
-i {
-  cursor: pointer;
-}
-
 img {
   width: 100%;
   max-width: 70%;
   height: auto;
-  cursor: pointer;
+  cursor: none;
   transition: all 0.2s linear;
 }
 
 .project-img > img:hover {
   transform: scale(0.9) rotate(2deg);
+}
+
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background-color: #ff4a57;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.15s ease;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+/* Scale cursor on hover */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  transform: scale(2.5);
 }
 
 /* header */
@@ -87,13 +109,23 @@ nav {
   width: 15px;
   height: 3px;
   margin: 5px 0;
-  background: linear-gradient(45deg, rgba(249, 105, 14, 1) 0%, rgba(255, 145, 61, 1) 50%, rgba(255, 199, 95, 1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(255, 145, 61, 1) 50%,
+    rgba(255, 199, 95, 1) 100%
+  );
 }
 
 .line2 {
   width: 30px;
   height: 3px;
-  background: linear-gradient(45deg, rgba(249, 105, 14, 1) 0%, rgba(255, 145, 61, 1) 50%, rgba(255, 199, 95, 1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(255, 145, 61, 1) 50%,
+    rgba(255, 199, 95, 1) 100%
+  );
 }
 
 .line3 {
@@ -101,11 +133,16 @@ nav {
   height: 3px;
   margin: 5px 0;
   margin-left: 15px;
-  background: linear-gradient(45deg, rgba(249, 105, 14, 1) 0%, rgba(255, 145, 61, 1) 50%, rgba(255, 199, 95, 1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(255, 145, 61, 1) 50%,
+    rgba(255, 199, 95, 1) 100%
+  );
 }
 
 .burger-menu-icon {
-  cursor: pointer;
+  cursor: none;
   z-index: 999;
   position: fixed;
   right: 0;
@@ -192,7 +229,7 @@ nav {
 .landing-page {
   width: 100%;
   height: 100vh;
-background:linear-gradient(rgb(43, 16, 0)1%,#131313);
+  background: linear-gradient(rgb(43, 16, 0) 1%, #131313);
 }
 
 .main-message {
