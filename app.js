@@ -107,7 +107,7 @@ gsap.from(".service-tiers .tier-item", {
     ease: "back.out(2)",
 });
 
-// Projects Section - Cascade Fade-Up
+// Projects Section - Zoom-In and Fade-Up
 gsap.from(".project-item", {
     scrollTrigger: {
         trigger: "#projects",
@@ -116,14 +116,16 @@ gsap.from(".project-item", {
         toggleActions: "play none none reverse",
     },
     opacity: 0,
-    y: 60,
+    scale: 0.8,
+    y: 40,
     stagger: {
         each: 0.2,
         from: "start",
     },
-    duration: 1.4,
-    ease: "power3.out",
+    duration: 1.2,
+    ease: "back.out(1.7)", // Smooth bounce effect
 });
+
 
 // Contact Section - Slide-In with Tilted Perspective
 gsap.from("#contact h2, #contact p, #contact a", {
@@ -178,7 +180,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Scale effect on hover for clickable items
-document.querySelectorAll('a, button, li').forEach(item => {
+document.querySelectorAll('a, button, li,i').forEach(item => {
     item.addEventListener('mouseover', () => {
         cursor.style.transform = 'scale(2.5)';
     });
