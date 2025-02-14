@@ -57,8 +57,8 @@ img {
 /* Custom Cursor Styles */
 .custom-cursor {
   position: fixed;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: #ff4a57;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -191,6 +191,7 @@ nav {
   text-transform: uppercase;
   color: #cecece;
   letter-spacing: 1.5px;
+  padding: 5px;
 }
 
 .nav-link:hover {
@@ -408,7 +409,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: default;
 }
 
 .tier-item i {
@@ -481,6 +481,7 @@ hr {
   display: inline-block;
   margin: 2rem 0;
   font-size: 1.4rem;
+  padding: 5px;
 }
 
 /* Contact */
@@ -512,6 +513,9 @@ hr {
   justify-content: space-evenly;
   align-items: center;
 }
+.contact .container a {
+  padding: 5px;
+}
 
 /* Footer */
 
@@ -530,6 +534,7 @@ footer {
 
 footer a {
   margin: 0 0.2rem;
+  padding: 5px;
 }
 
 .footer-coded-by {
