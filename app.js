@@ -33,10 +33,6 @@ navLinks.forEach(link => {
     })
 });
 
-
-
-
-// Add this JavaScript code to your existing app.js file
 const themeToggle = document.querySelector(".theme-toggle");
 const body = document.body;
 
@@ -126,49 +122,6 @@ gsap.from(".project-item", {
     ease: "back.out(1.7)", // Smooth bounce effect
 });
 
-
-// Contact Section - Slide-In with Tilted Perspective
-gsap.from("#contact h2, #contact p, #contact a", {
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 85%",
-        end: "bottom 60%",
-        scrub: 1,
-        toggleActions: "play none none reverse",
-    },
-    opacity: 0,
-    x: 100,
-    skewX: 10,
-    rotationY: -10,
-    stagger: 0.2,
-    duration: 1.5,
-    ease: "power2.out",
-});
-
-// Footer - Smooth Float-In with Hover Wave Effect
-gsap.from("footer", {
-    scrollTrigger: {
-        trigger: "footer",
-        start: "top 90%",
-        end: "bottom 80%",
-        scrub: 1,
-        toggleActions: "play none none reverse",
-    },
-    opacity: 0,
-    y: 50,
-    rotationX: -10,
-    duration: 1.8,
-    ease: "power2.out",
-    onComplete: () => {
-        gsap.to("footer", {
-            y: -5,
-            repeat: -1,
-            yoyo: true,
-            duration: 1.5,
-            ease: "sine.inOut",
-        });
-    },
-});
 
 // Custom Cursor Animation
 const cursor = document.querySelector('.custom-cursor');
